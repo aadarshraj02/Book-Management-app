@@ -1,9 +1,10 @@
 import BookList from "./components/BookList";
+import { Books } from "./utils/mockData";
 
 const App = () => {
   return (
     <div>
-      <BookList />
+      <BookList booksData={Books} />
     </div>
   );
 };
