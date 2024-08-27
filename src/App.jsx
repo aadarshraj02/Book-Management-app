@@ -1,5 +1,11 @@
+import BookList from "./components/BookList";
+
 const App = () => {
-  return <div></div>;
+  return (
+    <div>
+      <BookList />
+    </div>
+  );
 };
 
 export default App;
