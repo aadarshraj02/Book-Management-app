@@ -1,16 +1,17 @@
 const Book = (props) => {
   return (
-    <div>
+    <div className="book-card">
       <img
         src={props.bookDetails.cover_image}
         alt=""
         width="200px"
         height="200px"
+        className="book-cover"
       />
       <div>
-        <h2>{props.bookDetails.title}</h2>
-        <p>{props.bookDetails.author}</p>
-        <p>{props.bookDetails.description}</p>
+        <h2 className="book-title">{props.bookDetails.title}</h2>
+        <p className="book-author">{props.bookDetails.author}</p>
+        <p className="book-description">{props.bookDetails.description}</p>
       </div>
     </div>
   );
