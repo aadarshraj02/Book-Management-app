@@ -44,10 +44,12 @@
 }
 .search-input {
   width: 400px;
+  margin: 10px;
 }
 .search {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 20px;
 }
