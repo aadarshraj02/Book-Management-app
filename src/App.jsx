@@ -15,9 +15,11 @@ const App = () => {
         <input
           type="text"
           className="search-input"
-          onChange={() => handleSearch()}
+          onChange={(e) => setSearchText(e.target.value)}
         />
-        <button className="search-btn">Search</button>
+        <button className="search-btn" onClick={handleSearch}>
+          Search
+        </button>
       </div>
       <BookList booksData={Books} />
     </div>
