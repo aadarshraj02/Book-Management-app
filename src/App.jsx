@@ -1,6 +1,6 @@
 import BookList from "./components/BookList";
 import { Books } from "./utils/mockData";
-import "./index.css";
+import "../src/components/style.css";
 
 const App = () => {
   return (
