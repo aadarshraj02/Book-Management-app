@@ -1,3 +1,5 @@
+import "./style.css";
+
 const Book = (props) => {
   return (
     <div className="book-card">
