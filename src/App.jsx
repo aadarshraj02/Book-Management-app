@@ -4,10 +4,10 @@ import { Books } from "./utils/mockData";
 const App = () => {
   return (
     <div>
-      <div>
-        <h2>Search Books</h2>
-        <input type="text" />
-        <button>Search</button>
+      <div className="search">
+        <h2 className="search-header">Search Books</h2>
+        <input type="text" className="search-input" />
+        <button className="search-btn">Search</button>
       </div>
       <BookList booksData={Books} />
     </div>
