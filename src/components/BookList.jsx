@@ -3,8 +3,10 @@ import Book from "./Book";
 const BookList = (props) => {
   return (
     <>
-   {   console.log(props)}
-      <Book bookDetails={props.booksData[0]} />
+      {console.log(props)}
+      {props.booksData.map((data) => (
+        <Book bookDetails={data} key={data.id} />
+      ))}
     </>
   );
 };
