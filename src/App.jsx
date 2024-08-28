@@ -1,8 +1,11 @@
 import BookList from "./components/BookList";
 import { Books } from "./utils/mockData";
 import "../src/components/style.css";
+import { useState } from "react";
 
 const App = () => {
+  const [searchText, setSearchText] = useState("");
+
   const handleSearch = () => {};
 
   return (
