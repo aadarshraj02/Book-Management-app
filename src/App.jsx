@@ -5,8 +5,14 @@ import { useState } from "react";
 
 const App = () => {
   const [searchText, setSearchText] = useState("");
+  const [filteredBook, setFilteredBook] = useState(Books);
 
-  const handleSearch = () => {};
+  const handleSearch = () => {
+    const filterBooks = Books.filter((book) =>
+      book.title.toLowerCase().includes(searchText.toLowerCase())
+    );
+    setFilteredBook(filterBooks);
+  };
 
   return (
     <div>
@@ -21,7 +27,7 @@ const App = () => {
           Search
         </button>
       </div>
-      <BookList booksData={Books} />
+      <BookList booksData={filteredBook} />
     </div>
   );
 };
