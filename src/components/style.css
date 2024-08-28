@@ -9,3 +9,7 @@ book-card {
   background-color: #fff;
   margin: 20px;
 }
+book-title {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
