@@ -3,6 +3,7 @@ import { Books } from "./utils/mockData";
 import "../src/components/style.css";
 import { useState } from "react";
 import Header from "./components/Header";
+import { Outlet } from "react-router-dom";
 
 const App = () => {
   const [searchText, setSearchText] = useState("");
