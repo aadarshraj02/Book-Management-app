@@ -1,6 +1,6 @@
 import BookList from "./components/BookList";
 import { Books } from "./utils/mockData";
-import "../src/components/style.css";
+import "./components/style.css";
 import { useState } from "react";
 import Header from "./components/Header";
 import { Outlet } from "react-router-dom";
@@ -19,6 +19,7 @@ const App = () => {
   return (
     <div>
       <Header />
+      <Outlet />
       <div className="search">
         <h2 className="search-header">Search Books</h2>
         <input
